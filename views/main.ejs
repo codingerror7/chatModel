@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHAT MODEL</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <h1>THIS IS A CHAT MODEL!</h1>
+    <h2><% for(let chat of chats){ %>
+        <div class="cont">
+            <h5>FROM : <%= chat.from %></h5><br>
+            <h5>MESSAGE : <%= chat.msg %></h5><br>
+            <h5>TO : <%= chat.to %></h5><br>
+        </div>
+    <% } %></h2>
+    <form method="get" action="/app/new">
+        <button class="btn">New Chat!</button>
+    </form>
+</body>
+</html>

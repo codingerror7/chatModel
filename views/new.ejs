@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>new chat</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <h1>CREATE NEW CHAT!</h1>
+    <form method="post" action="/app/chats" class="cont">
+          <h5>FROM:</h5> <input placeholder="please enter sender name:" name="from">
+           <h5>MESSAGE: </h5> <textarea placeholder="please enetr message:" name="msg"></textarea>
+           <h5>TO:</h5>  <input placeholder="please enter receievrs name:" name="to">
+           <!--h5>DATE:</h5>  <input placeholder="enter date:" name="date"-->
+           <button class="btn">Create chat</button>
+    </form>
+</body>
+</html>
